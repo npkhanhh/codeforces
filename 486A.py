@@ -1,5 +1,8 @@
+import math
+
 n = int(input())
-s = 0
-for i in range(1,n+1):
-    print(s)
-    s += (pow(-1, i))*i
+
+res = int(math.ceil(n/2))
+if n % 2 == 1:
+    res*= -1
+print(res)
