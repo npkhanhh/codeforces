@@ -18,3 +18,10 @@ for i in range(len(s1)-1, -1, -1):
         else:
             cur -= 1
 print(''.join(s1))
+
+
+# best solution:
+# n,k=map(int,input().split())
+# s=input()
+# for c in '()':s=s.replace(c,'',(n-k)//2)
+# print(s)
