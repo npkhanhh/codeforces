@@ -2,17 +2,16 @@ n = int(input())
 
 l = list(map(int, input().split()))
 
-odd_prev = False
-res = 0
+b, w = 0, 0
+black_prev = False
 for i in l:
-    if i % 2 == 1:
-        res += (i-1)/2
-        if odd_prev:
-            res += 1
-            odd_prev = False
-        else:
-            odd_prev = True
+    j, k = divmod(i, 2)
+    b += j
+    w += j
+    if black_prev:
+        w += k
     else:
-        res += i/2
-        odd_prev = False
-print(int(res))
+        b += k
+    black_prev = not black_prev
+
+print(min(b, w))
