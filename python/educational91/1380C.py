@@ -16,9 +16,9 @@ for _ in range(int(stdin.readline())):
             if t < -1:
                 dp[idx] = res
             elif t == -1:
-                dp[idx] = 1
                 if res == 0:
                     res = 1
+                dp[idx] = res
             else:
                 dp[idx] = dp[t] + 1
                 if dp[idx] > res:
