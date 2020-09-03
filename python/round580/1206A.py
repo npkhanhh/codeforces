@@ -1,0 +1,5 @@
+input()
+a = sorted(map(int, input().split()), reverse=True)
+input()
+b = sorted(map(int, input().split()), reverse=True)
+print(a[0], b[0])
