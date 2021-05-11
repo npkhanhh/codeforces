@@ -1,10 +1,5 @@
 from sys import stdin
 
-if 0:
-    print('hehe')
-else:
-    print('hoho')
-
 for _ in range(int(stdin.readline())):
     n = int(stdin.readline())
     a = list(map(int, stdin.readline().split()))
