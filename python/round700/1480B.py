@@ -17,6 +17,3 @@ for z in range(int(stdin.readline())):
     print('YES' if a[-1][1] <= 0 else 'NO')
 
 
-# 879450 221893 2
-# 152242 46952
-# 963598 769221
